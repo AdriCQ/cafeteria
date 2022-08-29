@@ -1,7 +1,7 @@
 <template>
     <section class="bg-lite-blue">
         <div class="container">
-            <div class="row">
+            <div class="row" v-for="i in 3" :key="i">
                 <div class="col-md-6">
                     <div class="sided-90x mb-30">
                         <div class="s-left">

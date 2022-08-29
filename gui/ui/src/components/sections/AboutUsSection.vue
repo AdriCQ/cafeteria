@@ -5,34 +5,28 @@
         <div class="container">
             <div class="heading">
                 <img class="heading-img" src="images/heading_logo.png" alt="" />
-                <h2>Our Story</h2>
+                <h2>¿Quiénes Somos?</h2>
             </div>
 
             <div class="row">
                 <div class="col-md-6">
                     <p class="mb-30">
-                        Maecenas fermentum tortor id fringilla molestie. In hac
-                        habitasse platea dictumst. Morbi maximus lobortis ipsum,
-                        ut blandit augue ullamcorper vitae. Nulla dignissim leo
-                        felis, eget cursus elit aliquet ut. Curabitur vel
-                        convallis massa. Morbi tellus tortor, luctus et lacinia
-                        non, tincidunt in lacus. Vivamus sed ligula imperdiet,
-                        feugiat magna vitae, blandit ex. Vestibulum id dapibus
-                        dolor, ac cursus nulla.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Illo odit cumque voluptate blanditiis similique
+                        animi totam fuga? Deserunt excepturi corrupti
+                        blanditiis, quam dicta sequi doloremque, reiciendis
+                        eveniet quos exercitationem totam.
                     </p>
                 </div>
                 <!-- col-md-6 -->
 
                 <div class="col-md-6">
                     <p class="mb-30">
-                        Maecenas fermentum tortor id fringilla molestie. In hac
-                        habitasse platea dictumst.Morbi maximus lobortis ipsum,
-                        ut blandit augue ullamcorper vitae. Nulla dignissim leo
-                        felis, eget cursus elit aliquet ut. Curabitur vel
-                        convallismassa. Morbi tellus tortor, luctus et lacinia
-                        non, tincidunt in lacus. Vivamus sed ligula imperdiet,
-                        feugiat magna vitae, blandit ex. Vestibulumidda pibus
-                        dolor, accursus nulla.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consectetur animi odit obcaecati consequuntur, omnis quo
+                        provident quis dolor repellat ratione. Necessitatibus,
+                        impedit suscipit. Repellendus placeat excepturi in,
+                        neque expedita nulla.
                     </p>
                 </div>
                 <!-- col-md-6 -->

@@ -1,5 +1,5 @@
 <template>
-    <title-section subtitle="Noticias" />
+    <title-section subtitle="Eventos" />
     <event-section />
 </template>
 

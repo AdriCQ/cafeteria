@@ -2,10 +2,10 @@
     <header>
         <div class="container">
             <a class="logo" href="#"
-                ><img src="images/logo-white.png" alt="Logo"
+                ><img src="images/heading_logo.png" alt="Logo"
             /></a>
 
-            <div class="right-area">
+            <!-- <div class="right-area">
                 <h6>
                     <a
                         class="plr-20 color-white btn-fill-primary"
@@ -13,7 +13,7 @@
                         >CONTACTO: +53 55 555-555</a
                     >
                 </h6>
-            </div>
+            </div> -->
             <!-- right-area -->
 
             <a
@@ -34,23 +34,29 @@
                     >
                 </li>
                 <li @click="visible = false">
-                    <router-link :to="{ name: ROUTE_NAME.ABOUT }"
-                        >SOBRE NOSOTROS</router-link
+                    <router-link :to="{ name: ROUTE_NAME.MENU }"
+                        >OFERTAS</router-link
                     >
                 </li>
                 <li @click="visible = false">
-                    <router-link :to="{ name: ROUTE_NAME.MENU }"
-                        >MENU</router-link
+                    <router-link :to="{ name: ROUTE_NAME.EVENTS }"
+                        >EVENTOS</router-link
                     >
                 </li>
                 <li @click="visible = false">
                     <router-link :to="{ name: ROUTE_NAME.NEWS }"
-                        >EVENTOS</router-link
+                        >NOTICIAS</router-link
                     >
                 </li>
                 <li @click="visible = false">
                     <router-link :to="{ name: ROUTE_NAME.CONTACT }"
                         >CONTACTO</router-link
+                    >
+                </li>
+
+                <li @click="visible = false">
+                    <router-link :to="{ name: ROUTE_NAME.ABOUT }"
+                        >SOBRE NOSOTROS</router-link
                     >
                 </li>
             </ul>

@@ -4,11 +4,12 @@
         <div class="container h-100">
             <div class="dplay-tbl">
                 <div class="dplay-tbl-cell center-text color-white">
-                    <h5><b>BEST IN TOWN</b></h5>
-                    <h1 class="mt-30 mb-15">Pizza & Pasta</h1>
+                    <h1 class="mt-30 mb-15">Jagua - Bit</h1>
                     <h5>
-                        <a href="#" class="btn-primaryc plr-25"
-                            ><b>SEE TODAYS MENU</b></a
+                        <router-link
+                            :to="{ name: ROUTE_NAME.MENU }"
+                            class="btn-primaryc mt-25 plr-25"
+                            ><b>Nuestras Ofertas</b></router-link
                         >
                     </h5>
                 </div>
@@ -19,3 +20,7 @@
         <!-- container -->
     </section>
 </template>
+
+<script lang="ts" setup>
+import { ROUTE_NAME } from "src/router";
+</script>

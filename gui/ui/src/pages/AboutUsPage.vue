@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="mt-50 mt-sm-30 mb-50 mb-sm-30 center-text">
-                        <h2>We are Lugais</h2>
+                        <h2>Somos Jagua Bit</h2>
                     </div>
 
                     <h5 class="center-text mb-50 mb-sm-30 plr-25">
@@ -61,145 +61,22 @@
             <!-- row -->
 
             <h6 class="center-text mt-40 mt-sm-30 mb-20">
-                <a href="#" class="btn-primaryc plr-25 mb-10 mlr-5"
-                    ><b>SEE TODAYS MENU</b></a
-                >
-                <a href="#" class="btn-primaryc secondary plr-50 mlr-5 mb-10"
-                    ><b>ORDER NOW</b></a
+                <router-link
+                    :to="{ name: ROUTE_NAME.MENU }"
+                    class="btn-primaryc plr-25 mb-10 mlr-5"
+                    ><b>Revise Nuestras Ofertas</b></router-link
                 >
             </h6>
         </div>
         <!-- container -->
     </section>
-
-    <section class="story-area bg-seller color-white pos-relative">
-        <div class="pos-bottom triangle-up"></div>
-        <div class="pos-top triangle-bottom"></div>
-        <div class="container">
-            <div class="heading">
-                <img class="heading-img" src="images/heading_logo.png" alt="" />
-                <h2>What Clients Say</h2>
-            </div>
-
-            <div
-                class="swiper-container"
-                data-slide-effect="slide"
-                data-autoheight="false"
-                data-swiper-speed="500"
-                data-swiper-margin="25"
-                data-swiper-slides-per-view="3"
-                data-swiper-breakpoints="true"
-                data-scrollbar="true"
-                data-swiper-loop="true"
-                data-swpr-responsive="[1, 2, 2, 2]"
-            >
-                <div
-                    class="swiper-wrapper pb-90 pb-sm-60 left-text center-sm-text"
-                >
-                    <div class="swiper-slide">
-                        <h4>Amazing Pizza</h4>
-                        <p class="color-ash mb-50 mb-sm-30 mt-20">
-                            Etiam nec odio vestibulum est mattis efficiturut
-                            magna.Pellentesquesit amet tellus blandit. Etiam nec
-                            odio vestibulum est mattis effic iturut magna.
-                            Pellentesque sit am et tellus blandit. Etiamnec odio
-                            vestibul.
-                        </p>
-                        <img
-                            class="circle-60 mb-20"
-                            src="images/quoto-1-200x200.jpg"
-                            alt=""
-                        />
-                        <h6>
-                            <b class="color-primary">Daiane Smith</b>,<b
-                                class="color-ash"
-                                >Customer</b
-                            >
-                        </h6>
-                    </div>
-                    <!-- swiper-slide -->
-
-                    <div class="swiper-slide">
-                        <h4>Amazing Pizza</h4>
-                        <p class="color-ash mb-50 mb-sm-30 mt-20">
-                            Etiam nec odio vestibulum est mattis efficiturut
-                            magna.Pellentesquesit amet tellus blandit. Etiam nec
-                            odio vestibulum est mattis effic iturut magna.
-                            Pellentesque sit am et tellus blandit. Etiamnec odio
-                            vestibul.
-                        </p>
-                        <img
-                            class="circle-60 mb-20"
-                            src="images/quoto-2-200x200.jpg"
-                            alt=""
-                        />
-                        <h6>
-                            <b class="color-primary">Daiane Smith</b>,<b
-                                class="color-ash"
-                                >Customer</b
-                            >
-                        </h6>
-                    </div>
-                    <!-- swiper-slide -->
-
-                    <div class="swiper-slide">
-                        <h4>The best pastas in town</h4>
-                        <p class="color-ash mb-50 mb-sm-30 mt-20">
-                            Nec odio vestibulum est mattis effic iturut magna.
-                            Pellentesque sit am et tellus blandit. Etiam nec
-                            odio vestibul. Etiam nec odio vestibulum est mat tis
-                            effic iturut magna. Pellentesque sit amet tellus
-                            blandit. Etiam nec odio.
-                        </p>
-                        <img
-                            class="circle-60 mb-20"
-                            src="images/quoto-3-200x200.jpg"
-                            alt=""
-                        />
-                        <h6>
-                            <b class="color-primary">Michael Williams</b>,<b
-                                class="color-ash"
-                                >Customer</b
-                            >
-                        </h6>
-                    </div>
-                    <!-- swiper-slide -->
-
-                    <div class="swiper-slide">
-                        <h4>We love it there</h4>
-                        <p class="color-ash mb-50 mb-sm-30 mt-20">
-                            Retiam nec odio vestibulum est mattis effic iturut
-                            magna. Pellentesque sit amet tellus blandit. Etiam
-                            nec odio vestibulum est mattis effic iturut magna.
-                            Pellentesque sit am et tellus blandit. Etiam nec
-                            odio vestibul.
-                        </p>
-                        <img
-                            class="circle-60 mb-20"
-                            src="images/quoto-1-200x200.jpg"
-                            alt=""
-                        />
-                        <h6>
-                            <b class="color-primary">Shawn Gaines</b>,<b
-                                class="color-ash"
-                                >Customer</b
-                            >
-                        </h6>
-                    </div>
-                    <!-- swiper-slide -->
-                </div>
-                <!-- swiper-wrapper -->
-
-                <div class="swiper-pagination"></div>
-            </div>
-            <!-- swiper-container -->
-        </div>
-        <!-- container -->
-    </section>
+    <comments-section />
     <contact-section />
 </template>
 
 <script setup lang="ts">
 import TitleSection from "src/components/sections/TitleSection.vue";
 import ContactSection from "src/components/sections/ContactSection.vue";
+import CommentsSection from "src/components/sections/CommentsSection.vue";
+import { ROUTE_NAME } from "src/router";
 </script>

@@ -1,31 +1,3 @@
-/*
-====================================================
-
-* 	[Master Stylesheet]
-
-	Theme Name :
-	Version    :
-	Author     :
-	Author URI :
-
-====================================================
-
-	TOC
-
-	1. PRIMARY STYLES
-	2. COMMONS FOR PAGE DESIGN
-	3. HEADER
-	4. INTRO SECTION
-	5. PORFOLIO SECTION
-	6. ABOUT SECTION
-	7. EXPERIENCE SECTION
-	8. EDUCATION SECTION
-	9. COUNTER SECTION
-	10. FOOTER
-
-====================================================
-
-
 /* ---------------------------------
 1. PRIMARY STYLES
 --------------------------------- */
@@ -268,7 +240,7 @@ header {
     right: 0;
     text-align: center;
     z-index: 1000;
-    padding: 25px 0;
+    padding: 20px 0;
     font-weight: 600;
     color: #fff;
 }
@@ -506,7 +478,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
 
 @media only screen and (max-width: 575px) {
     header {
-        padding: 15px 0 25px;
+        padding: 15px 0 0px;
     }
 
     header .right-area {
@@ -8481,4 +8453,8 @@ ul.icon li a {
         padding-left: 90px !important;
         padding-right: 90px !important;
     }
+}
+
+.text-bold {
+    font-weight: bold;
 }

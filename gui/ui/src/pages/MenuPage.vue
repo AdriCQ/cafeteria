@@ -1,7 +1,7 @@
 <template>
     <title-section
         title="Ofertas Variadas"
-        subtitle="Menu"
+        subtitle="Ofertas"
         bg="images/slider_3_1920_600.jpg"
     />
     <menu-section />

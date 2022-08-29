@@ -9,8 +9,6 @@ export function loadJQuery() {
         // RADIAL PROGRESS BAR
         enableRadialProgress();
 
-        enableSwiper();
-
         /*COUNTER*/
         var countLineProgress = 0;
         var countCounterUp = 0;
@@ -52,4 +50,11 @@ export function loadJQuery() {
         // @ts-ignore
         jQuery
     );
+}
+
+export function scrollTop() {
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    });
 }
