@@ -3,7 +3,7 @@
         <div class="pos-top triangle-bottom"></div>
         <div class="container-fluid">
             <router-link to=""
-                ><img src="images/heading_logo.png" alt="Logo"
+                ><img src="/images/heading_logo.png" alt="Logo"
             /></router-link>
 
             <div class="pt-30">

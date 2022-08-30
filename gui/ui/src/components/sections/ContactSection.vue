@@ -2,7 +2,11 @@
     <section class="story-area left-text center-sm-text">
         <div class="container">
             <div class="heading">
-                <img class="heading-img" src="images/heading_logo.png" alt="" />
+                <img
+                    class="heading-img"
+                    src="/images/heading_logo.png"
+                    alt=""
+                />
                 <h2>Deje su Comentario</h2>
                 <h5 class="mt-10 mb-30">
                     Hola estimado cliente, cuéntenos su experiencia

@@ -1,9 +1,5 @@
 <template>
-    <title-section
-        title="Ofertas Variadas"
-        subtitle="Ofertas"
-        bg="images/slider_3_1920_600.jpg"
-    />
+    <title-section title="Ofertas Variadas" subtitle="Ofertas" />
     <menu-section />
 </template>
 

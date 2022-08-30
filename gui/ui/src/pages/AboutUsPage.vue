@@ -7,14 +7,14 @@
                 <div class="col-md-6">
                     <img
                         class="mb-30"
-                        src="images/about-1-600x400.jpg"
+                        src="/images/about-1-600x400.jpg"
                         alt=""
                     />
                 </div>
                 <div class="col-md-6">
                     <img
                         class="mb-30"
-                        src="images/about-2-600x400.jpg"
+                        src="/images/about-2-600x400.jpg"
                         alt=""
                     />
                 </div>

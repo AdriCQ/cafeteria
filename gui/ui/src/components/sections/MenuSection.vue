@@ -7,7 +7,7 @@
                         <div class="s-left">
                             <img
                                 class="br-3"
-                                src="images/menu-1-120x120.jpg"
+                                src="/images/menu-1-120x120.jpg"
                                 alt="Menu Image"
                             />
                         </div>
@@ -33,7 +33,7 @@
                         <div class="s-left">
                             <img
                                 class="br-3"
-                                src="images/menu-2-120x120.jpg"
+                                src="/images/menu-2-120x120.jpg"
                                 alt="Menu Image"
                             />
                         </div>
@@ -59,7 +59,7 @@
                         <div class="s-left">
                             <img
                                 class="br-3"
-                                src="images/menu-3-120x120.jpg"
+                                src="/images/menu-3-120x120.jpg"
                                 alt="Menu Image"
                             />
                         </div>
@@ -85,7 +85,7 @@
                         <div class="s-left">
                             <img
                                 class="br-3"
-                                src="images/menu-4-120x120.jpg"
+                                src="/images/menu-4-120x120.jpg"
                                 alt="Menu Image"
                             />
                         </div>
@@ -111,7 +111,7 @@
                         <div class="s-left">
                             <img
                                 class="br-3"
-                                src="images/menu-5-120x120.jpg"
+                                src="/images/menu-5-120x120.jpg"
                                 alt="Menu Image"
                             />
                         </div>
@@ -137,7 +137,7 @@
                         <div class="s-left">
                             <img
                                 class="br-3"
-                                src="images/menu-6-120x120.jpg"
+                                src="/images/menu-6-120x120.jpg"
                                 alt="Menu Image"
                             />
                         </div>
@@ -163,7 +163,7 @@
                         <div class="s-left">
                             <img
                                 class="br-3"
-                                src="images/menu-7-120x120.jpg"
+                                src="/images/menu-7-120x120.jpg"
                                 alt="Menu Image"
                             />
                         </div>
@@ -189,7 +189,7 @@
                         <div class="s-left">
                             <img
                                 class="br-3"
-                                src="images/menu-8-120x120.jpg"
+                                src="/images/menu-8-120x120.jpg"
                                 alt="Menu Image"
                             />
                         </div>
