@@ -8,5 +8,5 @@ export default defineConfig({
     build: {
         outDir: "../../public/ui",
     },
-    base: "/ui",
+    base: "/ui/",
 });
