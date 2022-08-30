@@ -1,1 +1,23 @@
 // app global css in SCSS form
+
+// Inputs
+.q-field .q-field__inner .q-field__control {
+  &,
+  & .q-field__marginal {
+    height: 45px;
+  }
+  .q-field__native {
+    padding-top: 10px;
+    padding-bottom: 1px;
+  }
+  .q-field__label {
+    font-size: 15px;
+    top: 12px;
+  }
+}
+
+.q-field .q-field__inner {
+  .q-field__bottom {
+    padding: 4px 12px;
+  }
+}
