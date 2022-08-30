@@ -53,15 +53,11 @@ class TelegramWebhookHandler extends WebhookHandler
         $APP_URL = env('APP_NAME', 'Jagua-BIT');
         $APP_NAME  = env('APP_URL', 'https://jaguabit.servimav.com');
 
-        $chat = TelegraphChat::query()->where(['chat_id' => $this->chat->chat_id])->first();
-        // User exists
-        if ($chat) {
-            $keyboard = Keyboard::make()
-                ->button('Acceder')->webApp($APP_URL)
-                ->button('Acceder en Navegador')->url($APP_URL)
-                ->chunk(2);
-            $message = 'Hola. Soy el Bot de ' . $APP_NAME . '. ¿Quieres acceder a nuestros servicios?';
-            $this->chat->message($message)->keyboard($keyboard)->dispatch();
-        }
+        $keyboard = Keyboard::make()
+            ->button('Acceder')->webApp($APP_URL)
+            ->button('Acceder en Navegador')->url($APP_URL)
+            ->chunk(2);
+        $message = 'Hola. Soy el Bot de ' . $APP_NAME . '. ¿Quieres acceder a nuestros servicios?';
+        $this->chat->message($message)->keyboard($keyboard)->dispatch();
     }
 }
