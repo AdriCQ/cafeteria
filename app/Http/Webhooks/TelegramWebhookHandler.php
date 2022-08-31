@@ -4,45 +4,106 @@ namespace App\Http\Webhooks;
 
 use DefStudio\Telegraph\Handlers\WebhookHandler;
 use DefStudio\Telegraph\Keyboard\Keyboard;
-use DefStudio\Telegraph\Models\TelegraphChat;
 
 /**
  * Telegram Webhook Handler
  */
 class TelegramWebhookHandler extends WebhookHandler
 {
+    /**
+     * app
+     */
+    public function app()
+    {
+        $APP_NAME = env('APP_NAME', 'Jagua-BIT');
+        $APP_URL  = env('APP_URL', 'https://jagua-bit.servimav.com');
+
+        $keyboard = Keyboard::make()
+            ->button('Acceder')->webApp($APP_URL)
+            ->button('Acceder en Navegador')->url($APP_URL)
+            ->chunk(2);
+        $message = 'Hola. Soy el Bot de ' . $APP_NAME . '. ¿Quieres acceder a nuestros servicios?';
+        $this->chat->message($message)->keyboard($keyboard)->dispatch();
+    }
+
+    /**
+     * comments
+     */
+    public function comments()
+    {
+        $APP_NAME = env('APP_NAME', 'Jagua-BIT');
+        $APP_URL  = env('APP_URL', 'https://jagua-bit.servimav.com');
+
+        $keyboard = Keyboard::make()
+            ->button('Acceder')->webApp($APP_URL)
+            ->button('Acceder en Navegador')->url($APP_URL)
+            ->chunk(2);
+        $message = 'Hola. Soy el Bot de ' . $APP_NAME . '. ¿Quieres acceder a nuestros servicios?';
+        $this->chat->message($message)->keyboard($keyboard)->dispatch();
+    }
+
+    /**
+     * events
+     */
+    public function events()
+    {
+        $APP_NAME = env('APP_NAME', 'Jagua-BIT');
+        $APP_URL  = env('APP_URL', 'https://jagua-bit.servimav.com');
+
+        $keyboard = Keyboard::make()
+            ->button('Acceder')->webApp($APP_URL)
+            ->button('Acceder en Navegador')->url($APP_URL)
+            ->chunk(2);
+        $message = 'Hola. Soy el Bot de ' . $APP_NAME . '. ¿Quieres acceder a nuestros servicios?';
+        $this->chat->message($message)->keyboard($keyboard)->dispatch();
+    }
 
     /**
      * help
      */
     public function help()
     {
+        $APP_NAME = env('APP_NAME', 'Jagua-BIT');
+        $APP_URL  = env('APP_URL', 'https://jagua-bit.servimav.com');
 
-        $APP_URL = env('APP_NAME', 'Jagua-BIT');
-        $APP_NAME  = env('APP_URL', 'https://jaguabit.servimav.com');
-
-        $this->chat->message('Para aclarar sus dudas y aprender utilizar ' . $APP_NAME . ' visite nuestro <b>Centro de Ayuda</b>')->keyboard(
-            Keyboard::make()
-                ->button('En Telegram')->webApp($APP_URL)
-                ->button('En Navegador')->url($APP_URL)
-                ->chunk(2)
-        )->dispatch();
+        $keyboard = Keyboard::make()
+            ->button('Acceder')->webApp($APP_URL)
+            ->button('Acceder en Navegador')->url($APP_URL)
+            ->chunk(2);
+        $message = 'Hola. Soy el Bot de ' . $APP_NAME . '. ¿Quieres acceder a nuestros servicios?';
+        $this->chat->message($message)->keyboard($keyboard)->dispatch();
     }
+
     /**
-     * open_app
+     * news
      */
-    public function open_app()
+    public function news()
     {
+        $APP_NAME = env('APP_NAME', 'Jagua-BIT');
+        $APP_URL  = env('APP_URL', 'https://jagua-bit.servimav.com');
 
-        $APP_URL = env('APP_NAME', 'Jagua-BIT');
-        $APP_NAME  = env('APP_URL', 'https://jaguabit.servimav.com');
+        $keyboard = Keyboard::make()
+            ->button('Acceder')->webApp($APP_URL)
+            ->button('Acceder en Navegador')->url($APP_URL)
+            ->chunk(2);
+        $message = 'Hola. Soy el Bot de ' . $APP_NAME . '. ¿Quieres acceder a nuestros servicios?';
+        $this->chat->message($message)->keyboard($keyboard)->dispatch();
+    }
 
-        $this->chat->message('¿Como desea <b>acceder</b> a ?')->keyboard(
-            Keyboard::make()
-                ->button('En Telegram')->webApp($APP_URL)
-                ->button('En Navegador')->url($APP_URL)
-                ->chunk(2)
-        )->dispatch();
+    /**
+     * offers
+     */
+    public function offers()
+    {
+        $APP_NAME = env('APP_NAME', 'Jagua-BIT');
+        $APP_URL  = env('APP_URL', 'https://jagua-bit.servimav.com');
+
+        $keyboard = Keyboard::make()
+            ->button('Acceder')->webApp($APP_URL)
+            ->button('Acceder en Navegador')->url($APP_URL)
+            ->chunk(2);
+        $message = 'Hola. Soy el Bot de ' . $APP_NAME . '. ¿Quieres acceder a nuestros servicios?';
+        $this->chat->message($message)->keyboard($keyboard)->dispatch();
     }
     /**
      * start
@@ -50,12 +111,16 @@ class TelegramWebhookHandler extends WebhookHandler
     public function start()
     {
 
-        $APP_URL = env('APP_NAME', 'Jagua-BIT');
-        $APP_NAME  = env('APP_URL', 'https://jaguabit.servimav.com');
+        $APP_NAME = env('APP_NAME', 'Jagua-BIT');
+        $APP_URL  = env('APP_URL', 'https://jagua-bit.servimav.com');
 
         $keyboard = Keyboard::make()
             ->button('Acceder')->webApp($APP_URL)
             ->button('Acceder en Navegador')->url($APP_URL)
+            ->button('Ofertas')->action('offers')
+            ->button('Noticias')->action('news')
+            ->button('Eventos')->action('events')
+            ->button('Opiniones')->action('comments')
             ->chunk(2);
         $message = 'Hola. Soy el Bot de ' . $APP_NAME . '. ¿Quieres acceder a nuestros servicios?';
         $this->chat->message($message)->keyboard($keyboard)->dispatch();
