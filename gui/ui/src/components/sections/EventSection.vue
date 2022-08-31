@@ -2,7 +2,7 @@
     <section class="story-area left-text center-sm-text">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-lg-8">
+                <div class="col-md-10 col-12">
                     <div class="mb-50 mb-sm-30" v-for="i in 4" :key="i">
                         <div class="pos-relative mb-30 pt-15">
                             <div
@@ -11,7 +11,7 @@
                                 <h4><b>Miércoles 31 de Agosto</b></h4>
                                 <div class="brdr-style-1"></div>
                             </div>
-                            <img src="images/blog-1-1000x400.jpg" alt="" />
+                            <img src="/images/blog-1-1000x400.jpg" alt="" />
                         </div>
                         <h4>
                             <a href="#"><b>Especial Menu Italiano</b></a>

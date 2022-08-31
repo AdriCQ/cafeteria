@@ -2,7 +2,7 @@
     <header>
         <div class="container">
             <a class="logo" href="#"
-                ><img src="images/heading_logo.png" alt="Logo"
+                ><img src="/images/heading_logo.png" alt="Logo"
             /></a>
 
             <!-- <div class="right-area">

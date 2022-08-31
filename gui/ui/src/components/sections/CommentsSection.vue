@@ -4,7 +4,11 @@
         <div class="pos-top triangle-bottom"></div>
         <div class="container">
             <div class="heading">
-                <img class="heading-img" src="images/heading_logo.png" alt="" />
+                <img
+                    class="heading-img"
+                    src="/images/heading_logo.png"
+                    alt=""
+                />
                 <h2>Nuestros Clientes</h2>
             </div>
 
@@ -53,6 +57,7 @@
 import { onMounted } from "vue";
 
 onMounted(() => {
+    // @ts-ignore
     enableSwiper();
 });
 </script>

@@ -4,7 +4,11 @@
         <div class="abs-tbr bg-3 w-20 z--1 dplay-md-none"></div>
         <div class="container">
             <div class="heading">
-                <img class="heading-img" src="images/heading_logo.png" alt="" />
+                <img
+                    class="heading-img"
+                    src="/images/heading_logo.png"
+                    alt=""
+                />
                 <h2>¿Quiénes Somos?</h2>
             </div>
 
