@@ -1,0 +1,8 @@
+### Login
+POST /api/users HTTP/1.1
+Host: {{ host }}
+
+{
+    "email": "adriancapote95@gmail.com",
+    "password": "password"
+}

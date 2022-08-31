@@ -1,0 +1,37 @@
+### Index
+GET /api/events HTTP/1.1
+Host: {{ host }}
+
+### Store
+POST /api/events HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}
+
+{
+    "title": "Event Title",
+    "active": false,
+    "date": "31/10/2022",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab harum est nam explicabo minus tenetur voluptatibus repellat suscipit saepe! Sint, nisi voluptatum! Ipsa perspiciatis quod ea vitae autem, nemo cupiditate?"
+}
+
+### Show
+GET /api/events/1 HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}
+
+### Update
+PATCH /api/events/1 HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}
+
+{
+    "title": "Event Title Updated",
+    "active": true,
+    "date": "31/10/2022",
+    "description": "Description Updated"
+}
+
+### Destroy
+DELETE /api/events/1 HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}

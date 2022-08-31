@@ -1,0 +1,40 @@
+### Index
+GET /api/messages HTTP/1.1
+Host: {{ host }}
+
+### All
+GET /api/messages/all HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}
+
+### Store
+POST /api/messages HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}
+
+{
+    "name": "MyName",
+    "email": "myemail@email.com",
+    "subject": "Subject",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab harum est nam explicabo minus tenetur voluptatibus repellat suscipit saepe! Sint, nisi voluptatum! Ipsa perspiciatis quod ea vitae autem, nemo cupiditate?"
+}
+
+### Show
+GET /api/messages/1 HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}
+
+### Update
+PATCH /api/messages/1 HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}
+
+{
+    "visible": true,
+    "content": "Update Content"
+}
+
+### Destroy
+DELETE /api/messages/1 HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}

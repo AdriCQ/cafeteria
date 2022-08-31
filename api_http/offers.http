@@ -1,0 +1,39 @@
+### Index
+GET /api/offers HTTP/1.1
+Host: {{ host }}
+
+### Store
+POST /api/offers HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}
+
+{
+    "title": "Offer Title",
+    "price": 20.00,
+    "active": true,
+    "special": false,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab harum est nam explicabo minus tenetur voluptatibus repellat suscipit saepe! Sint, nisi voluptatum! Ipsa perspiciatis quod ea vitae autem, nemo cupiditate?"
+}
+
+### Show
+GET /api/offers/1 HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}
+
+### Update
+PATCH /api/offers/1 HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}
+
+{
+    "title": "Offer Title Updated",
+    "price": 250.00,
+    "active": true,
+    "special": true,
+    "description": "Description Updated"
+}
+
+### Destroy
+DELETE /api/offers/1 HTTP/1.1
+Host: {{ host }}
+Authorization: {{token}}
