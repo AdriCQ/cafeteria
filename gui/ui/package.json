@@ -6,9 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "build:android": "vue-tsc --noEmit && vite build && npx cap sync && npx cap open android",
+    "preview": "vite preview",
+    "ionic:build": "npm run build",
+    "ionic:serve": "npm run dev"
   },
   "dependencies": {
+    "@capacitor/android": "^4.1.0",
+    "@capacitor/cli": "^4.1.0",
+    "@capacitor/core": "^4.1.0",
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/js": "^7.0.96",
     "axios": "^0.27.2",
