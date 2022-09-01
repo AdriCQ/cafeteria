@@ -49,6 +49,10 @@ class DatabaseSeeder extends Seeder
             'token' => env('TELEGRAM_BOT_TOKEN', '5771381846:AAGP6UgaqoaxPBE8p6S1lq8pYhYIgijjAkA'),
             'name' => 'JaguaBIT',
         ]);
+        $bot->chats()->create([
+            'chat_id' => env('TELEGRAM_ADMIN_CHAT'),
+            'name' => 'Developer AdriCQ',
+        ]);
         if (env('APP_ENV') === 'production') {
             // Unregister bot
             $bot->unregisterWebhook(true)->send();

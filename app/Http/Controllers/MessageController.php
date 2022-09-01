@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Resources\MessageResource;
 use App\Models\Message;
+use DefStudio\Telegraph\Models\TelegraphBot;
+use DefStudio\Telegraph\Models\TelegraphChat;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -56,9 +58,18 @@ class MessageController extends Controller
         }
         $validator = $validator->validate();
         $model = new Message($validator);
-        return $model->save()
-            ? new MessageResource($model)
-            : $this->sendResponse(null, 502);
+        if ($model->save()) {
+            foreach (TelegraphChat::all() as $tgChat) {
+                $tgChat->message('
+                Mensaje de ' . $model->name . '
+                Email: ' . $model->email . '
+
+                ' . $model->content . '
+            ');
+            }
+            return new MessageResource($model);
+        }
+        return $this->sendResponse(null, 502);
     }
 
     /**
