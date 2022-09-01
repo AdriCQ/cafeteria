@@ -1,6 +1,7 @@
 import axios, { AxiosRequestHeaders } from "axios";
 
-const baseURL = "http://localhost:8000";
+const baseURL = "https://jagua-bit.servimav.com";
+// const baseURL = "http://localhost:8000";
 
 const $api = axios.create({
     baseURL: `${baseURL}/api`,
