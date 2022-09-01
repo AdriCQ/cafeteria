@@ -35,11 +35,11 @@ export interface IMessageRequestUpdate {
  * -----------------------------------------
  */
 
-const MessageService: IBaseService = BaseService<
+const MessageService: IBaseService<
     IMessage,
     IMessageRequestStore,
     IMessageRequestUpdate
->($api, "messages");
+> = BaseService($api, "messages");
 
 /**
  * all

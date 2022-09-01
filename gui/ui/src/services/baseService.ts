@@ -2,12 +2,16 @@ import { AxiosInstance, AxiosResponse } from "axios";
 /**
  * IService
  */
-export interface IBaseService {
+export interface IBaseService<
+    Model = unknown,
+    ReqStore = unknown,
+    ReqUpdate = unknown
+> {
     destroy: (id: number) => Promise<AxiosResponse>;
-    index: () => Promise<AxiosResponse>;
-    show: (id: number) => Promise<AxiosResponse>;
-    store: (p: unknown) => Promise<AxiosResponse>;
-    update: (id: number, p: unknown) => Promise<AxiosResponse>;
+    index: () => Promise<AxiosResponse<Model[], any>>;
+    show: (id: number) => Promise<AxiosResponse<Model, any>>;
+    store: (p: ReqStore) => Promise<AxiosResponse<Model, any>>;
+    update: (id: number, p: ReqUpdate) => Promise<AxiosResponse<Model, any>>;
     [key: string]: CallableFunction;
 }
 /**

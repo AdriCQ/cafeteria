@@ -44,7 +44,7 @@ class EventsController extends Controller
             'image' => ['nullable', 'image'],
         ]);
         if ($validator->fails()) {
-            return $this->sendResponse(null, 402);
+            return $this->sendResponse(null, 400);
         }
         $validator = $validator->validate();
         // TODO Upload image
@@ -89,7 +89,7 @@ class EventsController extends Controller
             'image' => ['nullable', 'image'],
         ]);
         if ($validator->fails()) {
-            return $this->sendResponse(null, 402);
+            return $this->sendResponse(null, 400);
         }
         $validator = $validator->validate();
 

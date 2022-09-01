@@ -16,7 +16,7 @@ class MessageController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth:sanctum')->except(['index']);
+        $this->middleware('auth:sanctum')->except(['index', 'store']);
     }
     /**
      * Display a listing of the resource.
@@ -52,7 +52,7 @@ class MessageController extends Controller
             'content' => ['required', 'string'],
         ]);
         if ($validator->fails()) {
-            return $this->sendResponse(null, 402);
+            return $this->sendResponse(null, 400);
         }
         $validator = $validator->validate();
         $model = new Message($validator);
@@ -92,7 +92,7 @@ class MessageController extends Controller
             'content' => ['nullable', 'string'],
         ]);
         if ($validator->fails()) {
-            return $this->sendResponse(null, 402);
+            return $this->sendResponse(null, 400);
         }
         $validator = $validator->validate();
 
