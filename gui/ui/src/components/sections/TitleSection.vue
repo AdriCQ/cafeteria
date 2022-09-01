@@ -3,7 +3,7 @@
         v-if="dense"
         class="story-area bg-default color-white pos-relative"
         :style="`background: url(${
-            bg ? bg : '/ui/images/slider_6_1920_600.jpg'
+            bg ? bg : '/ui/images/title-img.jpg'
         }) no-repeat center`"
     >
         <div class="pos-bottom triangle-up" v-if="divisorBottom"></div>
@@ -18,7 +18,7 @@
         v-else
         class="bg-default h-500x main-slider pos-relative"
         :style="`background: url(${
-            bg ? bg : '/ui/images/slider_6_1920_600.jpg'
+            bg ? bg : '/ui/images/title-img.jpg'
         }) no-repeat center`"
     >
         <div class="pos-bottom triangle-up" v-if="divisorBottom"></div>

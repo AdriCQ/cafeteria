@@ -5,18 +5,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img
-                        class="mb-30"
-                        src="/images/about-1-600x400.jpg"
-                        alt=""
-                    />
+                    <img class="mb-30" src="/images/about-1.jpg" alt="" />
                 </div>
                 <div class="col-md-6">
-                    <img
-                        class="mb-30"
-                        src="/images/about-2-600x400.jpg"
-                        alt=""
-                    />
+                    <img class="mb-30" src="/images/about-2.jpg" alt="" />
                 </div>
                 <div class="col-md-12">
                     <div class="mt-50 mt-sm-30 mb-50 mb-sm-30 center-text">

@@ -45,7 +45,7 @@
                 {{ new Date().getFullYear() }}
                 Todos los Derechos Reservados | Hecho con
                 <i class="ion-heart" aria-hidden="true"></i> por
-                <a href="">AdriCQ</a>
+                <a href="https://github.com/AdriCQ">AdriCQ</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
         </div>

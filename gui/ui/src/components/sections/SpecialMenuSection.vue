@@ -24,7 +24,7 @@
                                 <div class="ribbon primary"></div>
                                 <b>ESPECIAL</b>
                             </h6>
-                            <img src="/images/seller-2-200x200.png" alt="" />
+                            <img src="/images/compact-disk.png" alt="" />
                         </div>
                         <h5 class="mt-20">Nombre-Oferta</h5>
                         <h4 class="mt-5"><b>$11.90</b></h4>

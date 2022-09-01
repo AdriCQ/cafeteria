@@ -9,7 +9,7 @@
                     src="/images/heading_logo.png"
                     alt=""
                 />
-                <h2>Nuestros Clientes</h2>
+                <h2>Nuestros Seguidores</h2>
             </div>
 
             <div
