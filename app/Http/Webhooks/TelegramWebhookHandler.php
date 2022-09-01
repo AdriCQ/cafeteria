@@ -43,6 +43,16 @@ class TelegramWebhookHandler extends WebhookHandler
     }
 
     /**
+     * download
+     */
+    public function download()
+    {
+        $APP_NAME = env('APP_NAME', 'Jagua-BIT');
+        $this->chat->message('<b>Aplicacion Android de ' . $APP_NAME . '</b>')
+            ->document(public_path('Jagua-BIT.apk'))->send();
+    }
+
+    /**
      * events
      */
     public function events()
@@ -117,6 +127,7 @@ class TelegramWebhookHandler extends WebhookHandler
         $keyboard = Keyboard::make()
             ->button('Acceder')->webApp($APP_URL)
             ->button('Acceder en Navegador')->url($APP_URL)
+            ->button('APK Android')->action('download')
             ->button('Ofertas')->action('offers')
             ->button('Noticias')->action('news')
             ->button('Eventos')->action('events')
