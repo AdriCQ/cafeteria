@@ -3,17 +3,8 @@
     <div class="container">
       <q-list separator>
         <q-item>
-          <q-item-section top avatar>
-            <q-avatar
-              color="primary"
-              text-color="white"
-              icon="mdi-cog-outline"
-              font-size="1.5rem"
-              class="shadow-3"
-            />
-          </q-item-section>
           <q-item-section>
-            <q-item-label class="text-h6 text-weight-regular"
+            <q-item-label class="text-center text-h6 text-weight-regular"
               >Administración</q-item-label
             >
           </q-item-section>
